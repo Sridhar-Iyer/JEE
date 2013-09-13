@@ -1,0 +1,12 @@
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `test`. `getEmpName` $$
+  CREATE PROCEDURE `test` . `getEmpName`
+       (IN EMP_ID INT, OUT EMP_FIRST VARCHAR(255))
+BEGIN
+   SELECT firstname INTO EMP_FIRST
+   FROM Employee
+   WHERE id = EMP_ID;
+END $$
+
+DELIMITER;
