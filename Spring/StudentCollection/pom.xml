@@ -20,6 +20,7 @@
 		<!-- Logging -->
 		<logback.version>1.0.13</logback.version>
 		<slf4j.version>1.7.5</slf4j.version>
+		<log4j.version>1.2.12</log4j.version>
 
 		<!-- Test -->
 		<junit.version>4.11</junit.version>
@@ -73,6 +74,13 @@
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
+		</dependency>
+		
+		<!--  Logging with Log4J  -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
 		</dependency>
 
 	</dependencies>	
